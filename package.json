@@ -10,7 +10,7 @@
     "clean": "yarn rimraf ~/Library/Developer/Xcode/DerivedData/Zach*; watchman watch-del-all; git clean -dfqX .",
     "start:ios": "yarn workspace @zach/native ios; yarn start:native",
     "start:native": "yarn workspace @zach/native start",
-    "start:web": "yarn workspace @zach/web start"
+    "start:web": "yarn workspace @zach/web dev"
   },
   "devDependencies": {
     "@types/jest": "24.0.19",
@@ -23,6 +23,9 @@
     "packages": [
       "packages/*",
       "apps/*"
+    ],
+    "nohoist": [
+      "**/react-native", "**/react-native/**"
     ]
   }
 }

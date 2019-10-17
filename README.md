@@ -11,6 +11,7 @@ I was able to accomplish the same thing with lerna, but for a monorepo who's lib
 ## Tips
 
 - Published libs: If you wanted to publish the libs in /packages to NPM you can take a similar approach but I would highly recommend converting those libs to use [TSDX](https://github.com/jaredpalmer/tsdx). Note that in doing so you will run into additional complications however, and may want to pull those out of workspaces then use lerna with npm for symbolic linking
+- React native must not be hoisted for react-native-web to work. Even with webpack aliasing the internal libs want to pull from react-native first and it breaks web.
 
 ## Known Issues
 
