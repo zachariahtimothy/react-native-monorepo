@@ -1,0 +1,19 @@
+{
+  "name": "@zach/core",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc -b ."
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.6.3",
+    "react": "16.9.0",
+    "react-native": "^0.61.2",
+    "react-native-paper": "2.16.*"
+  },
+  "workspaces": {
+    "nohoist": ["@babel/runtime", "@babel/runtime/**"]
+  }
+}

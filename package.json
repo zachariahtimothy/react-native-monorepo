@@ -1,0 +1,25 @@
+{
+  "name": "react-native-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "postinstall": "yarn workspace @zach/native postinstall",
+    "clean": "yarn rimraf ~/Library/Developer/Xcode/DerivedData/Zach*; watchman watch-del-all; git clean -dfqX .",
+    "start:ios": "yarn start:native; yarn workspace @zach/native ios",
+    "start:native": "yarn workspace @zach/native start"
+  },
+  "devDependencies": {
+    "@types/node": "12.11.1",
+    "@types/react": "16.9.9",
+    "rimraf": "^3.0.0",
+    "typescript": "3.6.*"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "apps/*"
+    ]
+  }
+}
