@@ -18,7 +18,10 @@ module.exports = {
     }),
   },
   resetCache: true,
-  watchFolders: [path.join(packagesDir, 'core'), path.join(__dirname, '../../node_modules')],
+  watchFolders: [
+    path.join(packagesDir, 'core'),
+    path.join(__dirname, '../../node_modules'),
+  ],
   // resolver: {
   //   extraNodeModules: {
   //     '@zach/core': path.resolve(packagesDir, 'core'),
