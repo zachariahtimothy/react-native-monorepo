@@ -42,5 +42,14 @@
       "json",
       "node"
     ]
+  },
+  "workspaces": {
+    "nohoist": [
+      "@react-native-community", "@react-native-community/**",
+      "react-native", "react-native/**",
+      "react-native-vector-icons", "react-native-vector-icons/**",
+      "react-native-paper", "react-native-paper/**",
+      "react-native-gesture-handler", "react-native-gesture-handler/**"
+    ]
   }
 }
