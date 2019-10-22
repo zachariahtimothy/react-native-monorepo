@@ -1,7 +1,15 @@
 {
+  "compileOnSave": true,
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "rootDir": ".",
-    "outDir": "dist"
-  }
+    "rootDir": "./src",
+    "outDir": "dist/",
+    "composite": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": ["src/*", "node_modules/*"]
+    },
+    "jsx": "react"
+  },
+  "include": ["src", "types"]
 }
