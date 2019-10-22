@@ -9,6 +9,8 @@ I was able to accomplish the same thing with lerna, but for a monorepo who's lib
 - Hot-module Reload for both Web and Native app
 - Yarn monorepo
 - Typescript Based
+- Abstracted component libraries / modules split into "packages"
+- Multiple applications (Web, Native so far) consuming packages in "apps"
 
 ## Tips
 
@@ -28,3 +30,5 @@ I was able to accomplish the same thing with lerna, but for a monorepo who's lib
 - Convert Native app to Expo
 - Add lib for Apollo Client
 - Add lib for Layouts
+- Abstract App into package
+- Add desktop application demo
