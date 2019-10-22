@@ -21,24 +21,23 @@
 const path = require('path');
 
 module.exports = function(api) {
-  console.log('babel!!!!!', api)
-  api.cache(true)
+  api.cache(false)
   return {
     presets: ['module:metro-react-native-babel-preset'],
-    plugins: [
-      [
-        'module-resolver',
-        {
-          root: ['./src'],
-          extensions: ['.ts', '.tsx', '.js', '.jsx', '.ios.js', '.android.js'],
-          alias: {
-            '@zach/core': path.resolve(
-              __dirname,
-              '../../packages/core/src/',
-            ),
-          },
-        },
-      ],
-    ],
+    // plugins: [
+    //   [
+    //     'module-resolver',
+    //     {
+    //       root: ['./src'],
+    //       extensions: ['.ts', '.tsx', '.js', '.jsx', '.ios.js', '.android.js'],
+    //       alias: {
+    //         '@zach/core': path.resolve(
+    //           __dirname,
+    //           '../../packages/core/src/',
+    //         ),
+    //       },
+    //     },
+    //   ],
+    // ],
   }
 }

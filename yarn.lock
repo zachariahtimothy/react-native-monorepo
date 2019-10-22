@@ -1011,6 +1011,14 @@
     hoist-non-react-statics "^2.5.0"
     prop-types "^15.6.0"
 
+"@callstack/react-theme-provider@^3.0.5":
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/@callstack/react-theme-provider/-/react-theme-provider-3.0.5.tgz#a173e455e9603c9c45357a3b6ace1273086527ca"
+  integrity sha512-Iec+ybWN0FvNj87sD3oWo/49edGUP0UOSdMnzCJEFJIDYr992ECIuOV89burAAh2/ibPCxgLiK6dmgv2mO/8Tg==
+  dependencies:
+    deepmerge "^3.2.0"
+    hoist-non-react-statics "^3.3.0"
+
 "@cnakazawa/watch@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.3.tgz#099139eaec7ebf07a27c1786a3ff64f39464d2ef"
@@ -3131,7 +3139,7 @@ color@^2.0.1:
     color-convert "^1.9.1"
     color-string "^1.5.2"
 
-color@^3.0.0:
+color@^3.0.0, color@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/color/-/color-3.1.2.tgz#68148e7f85d41ad7649c5fa8c8106f098d229e10"
   integrity sha512-vXTJhHebByxZn3lDvDJYw4lR5+uB3vuoHsuYA5AKuxRVn5wzzIfQKGLBmgdVRHKTJYeK5rvJcHnrd0Li49CFpg==
@@ -4971,6 +4979,11 @@ find-cache-dir@^2.0.0, find-cache-dir@^2.1.0:
     make-dir "^2.0.0"
     pkg-dir "^3.0.0"
 
+find-root@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/find-root/-/find-root-1.1.0.tgz#abcfc8ba76f708c42a97b3d685b7e9450bfb9ce4"
+  integrity sha512-NKfW6bec6GfKc0SGx1e07QZY9PE99u0Bft/0rzSD5k3sO/vwkVUpDUKVm5Gpp5Ue3YfShPFTX2070tDs5kB9Ng==
+
 find-up@3.0.0, find-up@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/find-up/-/find-up-3.0.0.tgz#49169f1d7993430646da61ecc5ae355c21c97b73"
@@ -5252,6 +5265,15 @@ get-value@^2.0.3, get-value@^2.0.6:
   resolved "https://registry.yarnpkg.com/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
   integrity sha1-3BXKHGcjh8p2vTesCjlbogQqLCg=
 
+get-yarn-workspaces@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/get-yarn-workspaces/-/get-yarn-workspaces-1.0.2.tgz#81591bdb392f1c6bac09cdc8491a6d275781aa44"
+  integrity sha512-Auel048Uclfgr74oNXKZWH30UgKDZXQdfUfgD9iWXdoUGJpeWg9lSuX/FZkQ6RB3KnBfAaf70xQXfwOjiE9rPw==
+  dependencies:
+    find-root "^1.1.0"
+    flatten "^1.0.2"
+    glob "^7.1.2"
+
 getpass@^0.1.1:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/getpass/-/getpass-0.1.7.tgz#5eff8e3e684d569ae4cb2b1282604e8ba62149fa"
@@ -5520,7 +5542,7 @@ hoist-non-react-statics@^2.3.1, hoist-non-react-statics@^2.5.0:
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
   integrity sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==
 
-hoist-non-react-statics@^3.1.0:
+hoist-non-react-statics@^3.1.0, hoist-non-react-statics@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.0.tgz#b09178f0122184fb95acf525daaecb4d8f45958b"
   integrity sha512-0XsbTXxgiaCDYDIWFcwkmerZPSwywfUqYmwT4jzewKTQSWoE6FCMoUVOeBJWK3E/CrWbxRG3m5GzY4lnIwGRBA==
@@ -9613,6 +9635,15 @@ react-native-paper@2.16.*, react-native-paper@^2.16.0:
     create-react-context "^0.2.3"
     hoist-non-react-statics "^3.1.0"
     react-lifecycles-compat "^3.0.4"
+    react-native-safe-area-view "^0.12.0"
+
+react-native-paper@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-paper/-/react-native-paper-3.0.0.tgz#b7d667dcb38f5e69552db140c398f50ea46ee98e"
+  integrity sha512-cKnSAS3OsTf/vkb/HooPV+Cc4fCqxoB+Iael80+rvIZ28T5ARtI0HjFXKiTOsliGJPQsu9xaX8wdEg0F2nF6qA==
+  dependencies:
+    "@callstack/react-theme-provider" "^3.0.5"
+    color "^3.1.2"
     react-native-safe-area-view "^0.12.0"
 
 react-native-safe-area-view@^0.12.0:

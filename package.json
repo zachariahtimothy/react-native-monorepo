@@ -6,10 +6,11 @@
   "private": true,
   "scripts": {
     "postinstall": "yarn workspace @zach/native postinstall",
+    "build:libs": "yarn workspace @zach/core build",
     "build:web": "yarn workspace @zach/cra build",
     "clean": "yarn rimraf ~/Library/Developer/Xcode/DerivedData/Zach*; watchman watch-del-all; git clean -dfqX .",
     "start:ios": "yarn workspace @zach/native ios",
-    "start:native": "yarn workspace @zach/native start",
+    "start:native": "concurrently \"yarn workspace @zach/core watch\" \"yarn workspace @zach/native start\"",
     "start:web": "concurrently \"yarn workspace @zach/core watch\" \"yarn workspace @zach/cra start\""
   },
   "devDependencies": {
@@ -17,6 +18,7 @@
     "@types/node": "12.11.2",
     "@types/react": "16.9.9",
     "concurrently": "^5.0.0",
+    "get-yarn-workspaces": "^1.0.2",
     "rimraf": "^3.0.0",
     "typescript": "3.6.*"
   },
