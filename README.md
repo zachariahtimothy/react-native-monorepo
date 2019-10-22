@@ -27,6 +27,7 @@ I was able to accomplish the same thing with lerna, but for a monorepo who's lib
 - ~~Add CRA Web Application~~
 - Add in unit tests
 - Add React Router with code splitting
+- Expand documentation and comment configuration throughout
 - Convert Native app to Expo
 - Add lib for Apollo Client
 - Add lib for Layouts
