@@ -5,10 +5,10 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "postinstall": "yarn workspace @zach/native postinstall",
     "build:libs": "yarn workspace @zach/core build",
     "build:web": "yarn workspace @zach/cra build",
     "clean": "yarn rimraf ~/Library/Developer/Xcode/DerivedData/Zach*; watchman watch-del-all; git clean -dfqX .",
+    "postinstall": "yarn workspace @zach/native postinstall",
     "start:ios": "concurrently \"yarn workspace @zach/core watch\" \"yarn workspace @zach/native ios\"",
     "start:native": "concurrently \"yarn workspace @zach/core watch\" \"yarn workspace @zach/native start\"",
     "start:web": "concurrently \"yarn workspace @zach/core watch\" \"yarn workspace @zach/cra start\""
