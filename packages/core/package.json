@@ -5,26 +5,30 @@
   "private": true,
   "main": "dist/index.js",
   "scripts": {
-    "build": "rm -rf dist; tsc --build .",
+    "build": "rm -rf dist && tsc --build .",
     "watch": "tsc --watch"
   },
   "devDependencies": {
-    "@babel/runtime": "^7.6.3",
-    "apollo-cache-inmemory": "^1.6.3",
+    "@babel/runtime": "^7.7.4",
+    "apollo-cache-inmemory": ">=1.6",
     "apollo-client": "^2.6.4",
     "apollo-link-context": "^1.0.19",
     "apollo-link-http": "^1.5.16",
     "graphql": "^14.5.8",
-    "react": "16.9.0",
-    "react-native": "^0.61.2",
-    "react-native-paper": "3.0.0",
+    "react": "16.12.0",
+    "react-native": "^0.61.5",
+    "react-native-paper": "^3.2.1",
     "react-native-vector-icons": "6.6.0"
   },
   "peerDependencies": {
+    "apollo-cache-inmemory": ">=1.6",
     "apollo-client": ">=2.6",
+    "apollo-link-context": ">=1.0",
+    "apollo-link-http": ">=1.5",
     "graphql": ">=14.5",
     "react": ">=16",
     "react-native-gesture-handler": ">=1.4",
+    "react-native": ">=0.61",
     "react-native-vector-icons": ">=6.6"
   },
   "workspaces": {

@@ -11,16 +11,22 @@
     "postinstall": "yarn workspace @zach/native postinstall",
     "start:ios": "concurrently \"yarn workspace @zach/core watch\" \"yarn workspace @zach/native ios\"",
     "start:native": "concurrently \"yarn workspace @zach/core watch\" \"yarn workspace @zach/native start\"",
-    "start:web": "concurrently \"yarn workspace @zach/core watch\" \"yarn workspace @zach/cra start\""
+    "start:web": "concurrently \"yarn workspace @zach/core watch\" \"yarn workspace @zach/cra start\"",
+    "test": "yarn workspaces run test"
   },
   "devDependencies": {
-    "@types/jest": "24.0.19",
-    "@types/node": "12.11.*",
+    "@testing-library/jest-dom": "^4.2.*",
+    "@testing-library/react": "^9.3.*",
+    "@testing-library/react-hooks": "^3.2.*",
+    "@types/jest": "24.0.*",
+    "@types/node": "12.12.*",
     "@types/react": "16.9.*",
-    "concurrently": "^5.0.0",
-    "get-yarn-workspaces": "^1.0.2",
+    "concurrently": "^5.0.*",
+    "get-yarn-workspaces": "^1.0.*",
+    "jest": "^24.9.0",
     "rimraf": "^3.0.0",
-    "typescript": "3.6.*"
+    "ts-jest": "^24.2.*",
+    "typescript": "3.7.*"
   },
   "workspaces": {
     "packages": [
